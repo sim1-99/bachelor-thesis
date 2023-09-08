@@ -1,5 +1,5 @@
 # Segmentazione automatica di immagini TC per lo studio della composizione corporea
-Tesi finale per il corso di Laurea in Fisica dell'Università di Bologna
+Tesi finale per il corso di Laurea in Fisica dell'Università di Bologna, A.A. 2020/2021
 
 ## Abstract
 Segmentare un'immagine significa riconoscere al suo interno elementi con caratteristiche comuni e raggrupparli, distinguendoli dagli elementi che posseggono caratteristiche diverse; si parla di segmentazione automatica quando questo processo è eseguito completamente da un software senza l'intervento umano. Nell'ambito della segmentazione dei tessuti corporei nelle immagini TC, i recenti metodi di segmentazione automatica si basano su reti neurali a convoluzione. L'impiego delle reti neurali è fondamentale, poiché la segmentazione manuale dei tessuti nelle immagini TC è un processo lungo e ripetitivo. Le immagini TC, spesso richieste dai medici per svariati motivi, contengono anche una grande quantità di dati dall'alto valore prognostico e predittivo della composizione corporea del paziente, che è un fattore determinante nella definizione di piani terapeutici oncologici. A causa della scarsa diffusione di software per la segmentazione automatica dei tessuti in immagini TC negli ospedali, tutti questi dati, che potrebbero essere utilizzati come marcatori predittivi di patologie, non vengono utilizzati.
