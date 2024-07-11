@@ -1,0 +1,93 @@
+\documentclass[12pt,a4paper,openright]{report}
+\usepackage[italian]{babel}
+\usepackage{newlfont}
+\usepackage{color}
+\textwidth=450pt\oddsidemargin=0pt
+
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{amsmath, amsthm, amssymb, mathtools}
+\usepackage{enumitem}
+\usepackage{physics}
+\usepackage{empheq, bm}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{upgreek}
+\usepackage[dvipsnames]{xcolor}
+\newcommand{\virgolette}[1]{``#1''}
+\usepackage{soul}
+\newcommand{\figref}[1]{figura \ref{#1}}
+\newcommand{\tabref}[1]{tabella \ref{#1}}
+\renewcommand{\eqref}[1]{equazione \ref{#1}}
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\numberwithin{table}{section}
+\DeclareMathOperator{\sen}{sen}
+\DeclareMathOperator{\senc}{senc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\renewcommand{\Vec}{\bm}
+\hypersetup
+   {
+   %bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={Tesi triennale},   % title
+    pdfauthor={Simone Chiarella},     % author
+    pdfsubject={Segmentazione automatica di immagini TC},   % subject of the document
+    pdfcreator={Simone Chiarella},   % creator of the document
+   %pdfproducer={Producer}, % producer of the document
+   %pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=false,      % links in new PDF window
+    colorlinks=true,       % false: boxed links; true: colored links
+    linkcolor=blue,          % color of internal links (change box color with linkbordercolor)
+    citecolor=red,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan,           % color of external links
+   %urlbordercolor={1 1 1}  % color of border around links
+   }
+
+\newenvironment{sistema}% 
+{\left\lbrace\begin{array}{@{}l@{}}}% 
+{\end{array}\right.}
+
+%\usepackage[backend=biber, natbib=true, style=numeric-comp, sorting=none, doi=false, url=true, isbn=true, hyperref = true]{biblatex}
+
+\usepackage[backend=biber, natbib=true, style=phys, citestyle=numeric, biblabel=brackets, sorting=none, doi=false, url=false, block=space, backref=true, backrefstyle=two, abbreviate=true, isbn=true, hyperref = true]{biblatex}
+\usepackage[autostyle, italian=guillemets]{csquotes}
+\addbibresource{biblio.bib}
+
+\begin{document}
+
+\input{frontespizio}
+
+\shipout\hbox{}
+\input{abstract}
+\shipout\hbox{}
+
+\tableofcontents
+\clearpage
+\null
+\newpage
+
+\input{introduzione}
+\input{materiali_e_metodi}
+\clearpage
+\null
+\newpage
+\input{clinica}
+\clearpage
+\null
+\newpage
+\input{bodycomposition}
+\input{conclusioni}
+
+\printbibliography[heading=bibintoc]
+
+\input{ringraziamenti}
+
+\end{document}
